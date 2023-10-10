@@ -1,1 +1,1 @@
-public class Car extends Transport implements Engine {}
+public class Car extends EngineTransport {}
