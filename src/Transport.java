@@ -1,4 +1,4 @@
-public abstract class Transport {
+public abstract class Transport implements Serviced {
     private String modelName;
     private int wheelsCount;
 
@@ -20,5 +20,12 @@ public abstract class Transport {
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    public void baseCheck(Transport transport) {
+        System.out.println("Обслуживаем " + transport.getModelName());
+        for (int i = 0; i < transport.getWheelsCount(); i++) {
+            transport.updateTyre();
+        }
     }
 }

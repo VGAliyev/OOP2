@@ -1,5 +1,5 @@
 public abstract class EngineTransport extends Transport {
-    public void checkEngine() {
+    protected void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 }

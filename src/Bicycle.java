@@ -1,1 +1,6 @@
-public class Bicycle extends Transport {}
+public class Bicycle extends Transport {
+    @Override
+    public void check() {
+        baseCheck(this);
+    }
+}

@@ -1,1 +1,7 @@
-public class Car extends EngineTransport {}
+public class Car extends EngineTransport {
+    @Override
+    public void check() {
+        baseCheck(this);
+        checkEngine();
+    }
+}
