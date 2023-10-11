@@ -1,8 +1,6 @@
-public class Bicycle {
-      public String modelName;
-      public int wheelsCount;
-
-       public void updateTyre() {
-           System.out.println("Меняем покрышку");
-       }
+public class Bicycle extends Transport {
+    @Override
+    public void check() {
+        baseCheck(this);
+    }
 }
